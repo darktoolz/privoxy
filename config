@@ -1,0 +1,29 @@
+listen-address  0.0.0.0:8118
+forward-socks5t / tor:9050 .
+forward-socks5t .onion tor:9050 .
+forward .i2p i2p:4444
+hostname privoxy
+confdir /etc/privoxy
+logfile stdout
+logdir /dev
+accept-intercepted-requests 0
+actionsfile default.action
+actionsfile match-all.action
+actionsfile user.action
+activity-animation   1
+allow-cgi-request-crunching 0
+buffer-limit 4096
+enable-edit-actions 0
+enable-proxy-authentication-forwarding 0
+enable-remote-http-toggle  0
+enable-remote-toggle  0
+enforce-blocks 0
+filterfile default.filter
+filterfile user.filter
+forwarded-connect-retries  0
+keep-alive-timeout 5
+max-client-connections 256
+show-on-task-bar 1
+socket-timeout 300
+split-large-forms 0
+trust-x-forwarded-for 1
