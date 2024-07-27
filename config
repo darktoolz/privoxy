@@ -21,9 +21,10 @@ enforce-blocks 0
 filterfile default.filter
 filterfile user.filter
 forwarded-connect-retries  0
-keep-alive-timeout 5
-max-client-connections 256
+keep-alive-timeout 300
+max-client-connections 1024
 show-on-task-bar 1
-socket-timeout 300
+socket-timeout 1800
 split-large-forms 0
 trust-x-forwarded-for 1
+tolerate-pipelining 1
