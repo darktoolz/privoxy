@@ -7,12 +7,12 @@ forward-socks5 .i2p i2p:4447 .
 buffer-limit 4096
 receive-buffer-size 32768
 forwarded-connect-retries 3
-keep-alive-timeout 120
-default-server-timeout 120
+keep-alive-timeout 75
+default-server-timeout 75
 socket-timeout 300
 split-large-forms 0
 trust-x-forwarded-for 1
-tolerate-pipelining 1
+tolerate-pipelining 0
 
 confdir /etc/privoxy
 logfile stdout
