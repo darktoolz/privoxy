@@ -8,7 +8,7 @@ buffer-limit 4096
 receive-buffer-size 32768
 forwarded-connect-retries 3
 keep-alive-timeout 75
-default-server-timeout 75
+#default-server-timeout 75
 socket-timeout 300
 split-large-forms 0
 trust-x-forwarded-for 1
