@@ -12,7 +12,7 @@ forwarded-connect-retries 3
 socket-timeout 300
 split-large-forms 0
 trust-x-forwarded-for 1
-tolerate-pipelining 0
+tolerate-pipelining 1
 
 confdir /etc/privoxy
 logfile stdout
