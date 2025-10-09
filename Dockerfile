@@ -11,4 +11,4 @@ RUN mv /url-info-osd.xml /wpad.dat ./
 COPY config /etc/privoxy/config
 EXPOSE 8118
 CMD ["/usr/sbin/privoxy", "--no-daemon", "/etc/privoxy/config"]
-HEALTHCHECK --start-period=30s --start-interval=3s --retries=3 --timeout=6s --interval=30s CMD curl google.com || exit 1
+HEALTHCHECK --start-period=30s --start-interval=10s --retries=3 --timeout=10s --interval=30s CMD ps | grep -vsq curl && curl google.com || exit 1
